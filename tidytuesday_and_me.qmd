@@ -1,0 +1,267 @@
+---
+title: "TidyTuesday and Me"
+author: "Ellis Hughes"
+format: revealjs
+editor: visual
+---
+
+## Greetings!
+
+🎉 Welcome to the Seattle UseR Group December 2022 Meetup! 🎉
+
+<br/>
+
+::: fragment
+Many thanks to Fred Hutch CRC (Sean Kross, Jeff Leek) for providing the space
+:::
+
+## Agenda
+
+-   Introduction to TidyTuesday
+
+-   Examples of Tidytuesday
+
+-   Packages from TidyTuesday
+
+    -   {tidytuesdayR}
+
+    -   {camcorder}
+
+## What is TidyTuesday?
+
+::: fragment
+-   Weekly Project to provide data and community by Tom Mock
+
+    -   Gateway to R4DS Community
+
+    -   Find Fellow R users on Social Media Sites
+
+    -   Great source of
+:::
+
+::: fragment
+-   Opportunity to create a portfolio based on Open Data
+
+    -   Share code with potential employers
+
+    -   Develop skills not necessarily aligned with current role
+:::
+
+::: fragment
+[R for Data Science Community Github - tidytuesday](https://github.com/rfordatascience/tidytuesday)
+:::
+
+## Examples from TidyTuesday - Newcomers are welcome!
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+This weeks <a href="https://twitter.com/hashtag/tidytuesday?src=hash&amp;ref_src=twsrc%5Etfw">#tidytuesday</a> showing elevator speed and building height, on a log scale, in New York City by borough🏙️ I'm starting to feel a bit more comfortable with ggplot and I finally got a legend (actually I got three of them)🥳 <a href="https://t.co/Nc5b6F4DBn">pic.twitter.com/Nc5b6F4DBn</a>
+
+</p>
+
+--- Eleanor D'Arcy (@eleanor_darcy_) <a href="https://twitter.com/eleanor_darcy_/status/1600186376456048640?ref_src=twsrc%5Etfw">December 6, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Examples from TidyTuesday
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+For this week's <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> I wanted to combine <a href="https://twitter.com/hashtag/ggmap?src=hash&amp;ref_src=twsrc%5Etfw">#ggmap</a> and <a href="https://twitter.com/hashtag/gganimate?src=hash&amp;ref_src=twsrc%5Etfw">#gganimate</a>. I had to clean the data to be cumulative so the previously approved elevators showed up as new ones start popping. Created functions to replicate for any year. <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> Code here: <a href="https://t.co/VedCezXMza">https://t.co/VedCezXMza</a> <a href="https://t.co/GaOcuhvMlX">pic.twitter.com/GaOcuhvMlX</a>
+
+</p>
+
+--- DEEPSHA MENGHANI (@bigdatadipper) <a href="https://twitter.com/bigdatadipper/status/1600526480727048193?ref_src=twsrc%5Etfw">December 7, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Examples from TidyTuesday - Advanced Users
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+Finally another, a bit late <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> contribution for week 2022\|36: The color explosion of parts in <a href="https://twitter.com/LEGO_Group?ref_src=twsrc%5Etfw">@LEGO_Group</a> sets over the last decades.<br><br>🟥⬛️🟪⬜️🟧🟩🟫<br><br>Made in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> with <a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;ref_src=twsrc%5Etfw">#ggplot2</a> and the <a href="https://twitter.com/hashtag/ggsankey?src=hash&amp;ref_src=twsrc%5Etfw">#ggsankey</a> 📦 by <a href="https://twitter.com/davsjob?ref_src=twsrc%5Etfw">@davsjob</a> 🙌 Data via <a href="https://twitter.com/Rebrickable?ref_src=twsrc%5Etfw">@Rebrickable</a>. <a href="https://t.co/C1hzf4cLS5">pic.twitter.com/C1hzf4cLS5</a>
+
+</p>
+
+--- Cédric Scherer 🐦➡️🦣 @CedScherer\@vis.social (@CedScherer) <a href="https://twitter.com/CedScherer/status/1569780959620530176?ref_src=twsrc%5Etfw">September 13, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Examples From TidyTuesday - Advanced Users Cont.
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+Making-of <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> 2022/36 🎥<a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;ref_src=twsrc%5Etfw">#ggplot2</a> <a href="https://twitter.com/hashtag/ggsankey?src=hash&amp;ref_src=twsrc%5Etfw">#ggsankey</a> <a href="https://twitter.com/hashtag/camcorder?src=hash&amp;ref_src=twsrc%5Etfw">#camcorder</a> <a href="https://t.co/eT53TeShrw">https://t.co/eT53TeShrw</a> <a href="https://t.co/dEnzzZsxiQ">pic.twitter.com/dEnzzZsxiQ</a>
+
+</p>
+
+--- Cédric Scherer 🐦➡️🦣 @CedScherer\@vis.social (@CedScherer) <a href="https://twitter.com/CedScherer/status/1569945852625526785?ref_src=twsrc%5Etfw">September 14, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Examples from TidyTuesday - Screencasts
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+Tune in tonight at 8 PM ET for another LIVE <a href="https://twitter.com/hashtag/tidytuesday?src=hash&amp;ref_src=twsrc%5Etfw">#tidytuesday</a> screencast<br><br>This week we're analyzing elevators in NYC! 🛗📈📉 <a href="https://t.co/glRd6zfR6P">https://t.co/glRd6zfR6P</a> <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>
+
+</p>
+
+--- David Robinson (@drob) <a href="https://twitter.com/drob/status/1600210714274037760?ref_src=twsrc%5Etfw">December 6, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Examples From TidyTuesday
+
+-   Find fellow community members on twitter (Be forwarned, there is an unfortunate crossing of people using the same hashtag for otherthings, so can be NSFW)
+
+-   https://twitter.com/TidyTuesday_Bot
+
+-   Not limited to the 🐦App/website
+
+    -   [LinkedIn](https://www.linkedin.com/feed/hashtag/tidytuesday/)
+
+    -   [Mastodon](https://fosstodon.org/@R4DSCommunity)
+
+    -   [Posit Community](https://community.rstudio.com/t/about-the-tidytuesday-category/153867)
+
+------------------------------------------------------------------------
+
+![](https://media.tenor.com/SUoVsVMqNygAAAAM/excited-hockey.gif){fig-align="center"}
+
+------------------------------------------------------------------------
+
+How to I get started?
+
+------------------------------------------------------------------------
+
+## My First TidyTuesday
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+For my first post ever, a <a href="https://twitter.com/hashtag/tidytuesday?src=hash&amp;ref_src=twsrc%5Etfw">#tidytuesday</a> contribution. A survival plot of the mileage before retirement of a bike, based on type of ridership average. For the code: <a href="https://t.co/4NEKpTXgS4">https://t.co/4NEKpTXgS4</a> <a href="https://twitter.com/hashtag/rstat?src=hash&amp;ref_src=twsrc%5Etfw">#rstat</a> <a href="https://twitter.com/hashtag/survivalhasneverbeenfitter?src=hash&amp;ref_src=twsrc%5Etfw">#survivalhasneverbeenfitter</a> <a href="https://t.co/lygTAJqHFo">pic.twitter.com/lygTAJqHFo</a>
+
+</p>
+
+--- Ellis Hughes (@ellis_hughes) <a href="https://twitter.com/ellis_hughes/status/1004223871287869440?ref_src=twsrc%5Etfw">June 6, 2018</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+
+------------------------------------------------------------------------
+
+![](images/paste-287FECB9.png)
+
+------------------------------------------------------------------------
+
+![](images/paste-2F6DA0DC.png)
+
+-   Import data
+
+-   Show Weekly readme
+
+-   Provides a simple template to get started
+
+------------------------------------------------------------------------
+
+![](images/paste-0E77EBBB.png)
+
+------------------------------------------------------------------------
+
+![](images/paste-4633E7E0.png)
+
+## {tidytuesdayR}
+
+-   Worked with Tom Mock to ensure structure of data source is consistent week to week
+
+-   Intentionally minimal
+
+-   Very stable (Existed since 2019)
+
+## {Camcorder}
+
+![](images/paste-EC234C5D.png){fig-align="center"}
+
+------------------------------------------------------------------------
+
+## Remember This?
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+Making-of <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> 2022/36 🎥<a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;ref_src=twsrc%5Etfw">#ggplot2</a> <a href="https://twitter.com/hashtag/ggsankey?src=hash&amp;ref_src=twsrc%5Etfw">#ggsankey</a> <a href="https://twitter.com/hashtag/camcorder?src=hash&amp;ref_src=twsrc%5Etfw">#camcorder</a> <a href="https://t.co/eT53TeShrw">https://t.co/eT53TeShrw</a> <a href="https://t.co/dEnzzZsxiQ">pic.twitter.com/dEnzzZsxiQ</a>
+
+</p>
+
+--- Cédric Scherer 🐦➡️🦣 @CedScherer\@vis.social (@CedScherer) <a href="https://twitter.com/CedScherer/status/1569945852625526785?ref_src=twsrc%5Etfw">September 14, 2022</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Its Birth, as with most things #Rstats it seems, was on Twitter
+
+<blockquote class="twitter-tweet">
+
+<p lang="en" dir="ltr">
+
+I think it's him just ggsave() A LOT<a href="https://t.co/r36ciZ3BN7">https://t.co/r36ciZ3BN7</a> <a href="https://t.co/eVMxwsw2hi">https://t.co/eVMxwsw2hi</a>
+
+</p>
+
+--- Tom Mock ❤️ @posit_pbc (@thomas_mock) <a href="https://twitter.com/thomas_mock/status/1287894765955145728?ref_src=twsrc%5Etfw">July 27, 2020</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+```
+## Goals
+
+-   Easily initialize that plots should be recorded
+
+-   Display accurate representation of data -as it is saved-
+
+-   Multiple output types
+
+-   Allow for resizing on the fly
+
+-   replay the gif of "the making of" at the end
+
+------------------------------------------------------------------------
+
+![](https://media.tenor.com/k96kwGByWTUAAAAC/demo-day-chip-gaines.gif)
+
+Its Demo Day!
